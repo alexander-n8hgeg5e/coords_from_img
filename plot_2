@@ -1,0 +1,20 @@
+set size ratio -1
+plot 'img.png' binary filetype=png with rgbimage
+
+pause mouse button1 "click to set origin origin\n"
+origin_x=MOUSE_X
+origin_y=MOUSE_Y
+print origin_x,origin_y
+
+pause mouse button1 "click to set dx,dy\n"
+dx=MOUSE_X-origin_x
+dy=MOUSE_Y-origin_y
+print dx,dy
+
+set size ratio dy/dx
+plot 'img.png' binary filetype=png dx=1/dx*lx dy=1/dy*ly origin=( 1 , 0 ) with rgbimage
+#set xrange [0.6:1.6]
+#set yrange [0:8]
+replot
+pointx=1
+pointy=0

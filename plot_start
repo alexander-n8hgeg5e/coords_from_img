@@ -1,0 +1,10 @@
+set print '/dev/stdout'
+loadlevel=0
+print "start gnuplot with:\"gnuplot plot_start -\""
+print "Set variables origin_x and origin_y."
+print "like this:"
+
+print 'print "origin_x=0\norigin_y=0\nlx=1\nly=1"'
+cont="plot_control"
+printerr 'continue with "load cont"'
+set print 'origin'

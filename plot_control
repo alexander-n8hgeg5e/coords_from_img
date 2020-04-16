@@ -1,0 +1,15 @@
+loadlevel=loadlevel+1
+
+if(loadlevel==1){
+loadfile="plot_1"
+}
+if(loadlevel==2){
+loadfile="plot_2"
+}
+if(loadlevel==3){
+print "Click on the image to print points..."
+loadfile="plot_loop_get_coords"
+}
+
+load loadfile
+reread

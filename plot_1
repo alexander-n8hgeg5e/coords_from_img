@@ -1,0 +1,2 @@
+set print "/dev/stdout"
+load 'origin'

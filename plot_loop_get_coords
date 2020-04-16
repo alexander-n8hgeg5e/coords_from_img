@@ -1,0 +1,12 @@
+pause mouse button1
+
+#pointx_prev=pointx
+#pointy_prev=pointy
+
+pointx=MOUSE_X
+pointy=MOUSE_Y
+
+print pointx,pointy
+printerr pointx,pointy
+
+reread
